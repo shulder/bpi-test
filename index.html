@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Тестовое задание для BPI Ukraine</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Курс доллара в Украине по данным finance.ua</h1>
+        <p>Данные получены: <span class="date"></span></p>
+        <form class="btn-form">
+          <button class="btn-form__prev-date">Раньше</button>
+          <button class="btn-form__next-date">Позже</button>
+        </form>
+    </header>
+    <p class="warn-line is-element-hidden"></p>
+    <main>
+      <ul class="orgs-list">
+        <li class="orgs-list__item is-element-hidden ">
+          <p class="orgs-list__item__name"></p>
+          <p class="orgs-list__item__type"></p>
+          <p class="orgs-list__item__currency">Покупка: 
+            <span class="orgs-list__item__currency__ask"></span>
+          </p>
+          <p class="orgs-list__item__currency">Продажа: 
+            <span class="orgs-list__item__currency__bid"></span>
+          </p>
+        </li>
+      </ul>
+    </main>
+  </body>
+  <script src="window.js"></script>
+</html

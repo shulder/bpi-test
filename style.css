@@ -1,0 +1,112 @@
+* {
+	background-color: #f1f1f1;
+	color: #333333;
+	font-family: 'Arial';
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+}
+
+form {
+	width: 200px;
+	display: flex;
+	justify-content: space-around;
+}
+
+button {
+	width: 45%;
+	height: 30px;
+	transition: 0.5s;	
+	outline: none;
+	cursor: pointer;
+}
+
+button:hover {
+	border: 1px solid black;
+	background: #f2f2f2;
+	box-shadow: inset 0px 0px 5px black;
+}
+
+header{
+	display: flex;
+	justify-content: space-around;
+	flex-flow: column;
+	height: 150px;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+main{
+	margin: 0 auto;
+	width: 90%;
+}
+
+.is-element-hidden {
+	display: none !important;
+}
+
+.warn-line {
+	text-align: center;
+	color: red;
+	margin-bottom: 10px;
+}
+
+.orgs-list{
+	display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-column-gap: 0;
+}
+
+.orgs-list__item{
+	display: flex;
+	font-size: 14px;
+	align-items: center;
+}
+
+.orgs-list__item p {
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.orgs-list__item__name {
+	width: 40%;
+}
+
+.orgs-list__item__type{
+	width: 20%;
+}
+
+.orgs-list__item__currency {
+	max-width: 100px;
+}
+
+.orgs-list__item__currency span {
+	font-weight: bold;
+	width: 20%;
+}
+
+@media screen and (max-width: 700px) {
+	header{
+		height: 250px;
+		margin-bottom: 0;
+	}
+
+	.orgs-list{
+		display: flex;
+		flex-flow: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.orgs-list__item p {
+		width: 120px;
+	}
+}
+
+
+
+
